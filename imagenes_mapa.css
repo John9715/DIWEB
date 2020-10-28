@@ -1,0 +1,21 @@
+body{
+    font: 1em sans-serif;
+    background-color: #9fa68b;
+}
+
+h1{
+    color: #161669;
+    font-weight: 900;
+    text-align: right;
+}
+
+h2{
+    clear: both;
+    background-color: #5d6336;
+    color: white;
+    text-align: justify;
+}
+address{
+    clear: both;
+    font-size: 80%;
+}

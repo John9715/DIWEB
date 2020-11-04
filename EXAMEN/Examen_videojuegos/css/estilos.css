@@ -6,8 +6,16 @@
 body{
 
     background-color: black;
+    background-image: url(../img/matrix2.png), url(../img/matrix.png);
+    background-position: right, left;
+    background-repeat: repeat-y;
+    background-size: 10%;
     
+}
 
+emoji{
+
+    text-align: center;
 }
 
 img.izquierda{
@@ -28,11 +36,41 @@ div.centro {
     position: center;
     text-align: center;
     background-color: black;
-    color: green;
+    color: #05c705;
+    
+    
 }
 
+div#pong{
+    
+    color: white;
+    border: solid white;
+    text-align: justify;
+    margin-top: 0%;
+    
+}
+
+
+div#space{
+    
+    color: white;
+    border: solid white;
+    text-align: justify;
+    margin-top: 0%;
+    
+}
+
+
+div#pacman{
+    
+    color: white;
+    border: solid white;
+    text-align: justify;
+    margin-top: 0%;
+    
+}
 h1{
-    color: green;
+    color: #05c705;
     font-family: "Monoton";
     text-align: center;
     text-decoration: underline double;
@@ -40,9 +78,38 @@ h1{
 
 h2 {
 
-    background-color: green;
+    background-color: #05c705;
     color: white;
     text-align: left;
+    border: solid white;
+
 }
 
+strong{
 
+    color: yellow
+}
+
+i{
+
+    color: red;
+
+}
+
+date{
+
+    color: green;
+
+}
+
+cite{
+
+    color: white;
+    font-style: normal;
+    
+
+}
+
+hr{
+    border-color: #05c705;
+}

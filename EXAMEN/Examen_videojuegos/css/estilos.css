@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Monoton";
+    src: url("../fonts/monoton.woff2");
+}
+
+body{
+
+    background-color: black;
+    
+
+}
+
+img.izquierda{
+
+    text-align: left;
+    background-repeat: repeat;
+
+}
+
+img.derecha{
+
+    text-align: right;
+
+}
+
+div.centro {
+
+    position: center;
+    text-align: center;
+    background-color: black;
+    color: green;
+}
+
+h1{
+    color: green;
+    font-family: "Monoton";
+    text-align: center;
+    text-decoration: underline double;
+}
+
+h2 {
+
+    background-color: green;
+    color: white;
+    text-align: left;
+}
+
+

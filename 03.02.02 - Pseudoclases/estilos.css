@@ -18,5 +18,5 @@ h2::first-letter{
 
 li:focus{
 
-    color: blue;
+    text-decoration: blue;
 }

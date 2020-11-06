@@ -1,0 +1,25 @@
+body{
+
+    background-color: #d3d3d3;
+    height: 200px;
+
+}
+
+h1{
+
+    text-align: center;
+
+}
+
+nav{
+
+    height: 200px;
+
+}
+
+li{
+
+    width: 100px;
+    height: 100px;
+
+}

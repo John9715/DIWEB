@@ -31,10 +31,29 @@ li:nth-child(3){
 li.item:nth-of-type(odd):hover::before{
 
     content: "Somos elementos impares ";
+
 }
 
+/*Otra forma*/
+/*
+li.item:nth-of-type(2n-1):hover::before{
+
+    content: "Somos elementos impares ";
+
+}
+*/
+
+li.item:nth-of-type(even):hover::after{
+    
+    content: " Somos elementos pares";
+
+}
+
+/*Otra forma*/
+/*
 li.item:nth-of-type(2n):hover::after{
     
     content: " Somos elementos pares";
 
 }
+*/

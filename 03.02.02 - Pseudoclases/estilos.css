@@ -4,7 +4,7 @@ body{
 
 }
 
-h2:first{
+h2:first-of-type{
 
     color: #df2b4f;
 
@@ -16,7 +16,25 @@ h2::first-letter{
 
 }
 
-li:focus{
+li{
 
-    text-decoration: blue;
+    list-style: none;
+    list-style-type: none;
+}
+
+li:nth-child(3){
+
+    color: green;
+
+}
+
+li.item:nth-of-type(odd):hover::before{
+
+    content: "Somos elementos impares ";
+}
+
+li.item:nth-of-type(2n):hover::after{
+    
+    content: " Somos elementos pares";
+
 }

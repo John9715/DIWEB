@@ -74,7 +74,22 @@
 
   transition-property: border;
   transition-duration: 1s;
-  border-color: black;
-  border-width: 3px;
+  border: 5px double blue;
+
+}
+
+.caja9:hover{
+
+  transition-property: margin;
+  transition-duration: 1s;
+  margin: 2em;
+
+}
+
+.caja10:hover{
+
+  transition-property: padding;
+  transition-duration: 1s;
+  padding: 5em;
 
 }

@@ -1,6 +1,7 @@
 .container{
     position: relative;
   }
+
   .caja{
     width: 180px;
     height: 180px;
@@ -12,4 +13,82 @@
     float: left;
     font-size: 18px;
     font-family: Arial;
+  }
+
+  .caja1:hover{
+
+    transform: scale(2, 0.5);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja2:hover{
+  
+    transform: rotate(0.5turn);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja3:hover{
+  
+    transform: skew(30deg, 20deg);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja4:hover{
+  
+    transform: skewX(20deg);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja5:hover{
+  
+    transform: skewY(30deg);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja6:hover{
+  
+    transform: translate(12px, 50%);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja7:hover{
+  
+    transform: translateX(12px);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja8:hover{
+  
+    transform: translateY(12px);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja9:hover{
+  
+    transform: perspective(17px) rotateX(0.5turn);
+    transition-duration: 1s;
+  
+  }
+  
+  .caja10:hover{
+  
+    transform: perspective(17px) rotateY(0.5turn);
+    transition-duration: 1s;
+    padding: 5em;
+  
+  }
+
+  .caja11:hover{
+  
+    transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+    transition-duration: 1s;
+  
   }

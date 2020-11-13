@@ -12,6 +12,8 @@ body {
     overflow-x:hidden;
     overflow-y:auto;
 }
+
+/*Le das tamaño al contenedor de la primera imagen*/
 .parallax-wrapper {
     width: 100vw;
     height:100vh;
@@ -19,6 +21,8 @@ body {
     box-sizing: border-box;
     transform-style: preserve-3d;
 }
+
+/*Das el formato a la primera imagen*/
 .parallax-wrapper::before {
     content:"";
     width: 100vw;
@@ -30,14 +34,18 @@ body {
     z-index: -1;
     transform:translateZ(-1px) scale(2);
 }
+
+/*Das el formato a la segunda imagen*/
 .regular-wrapper {
     width: 100vw;
     height:100vh;
     padding-top:20vh;
     background-image: url("imagen.png");
-    z-index: 2;
+    z-index: 2; /*posicionamiento de la imagen*/
     position: relative;
 }
+
+/*Das el formato al contenido*/
 .content {
     margin: 0 auto;
     padding: 50px;

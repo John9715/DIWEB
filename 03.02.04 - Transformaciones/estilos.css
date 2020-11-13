@@ -82,7 +82,6 @@
   
     transform: perspective(17px) rotateY(0.5turn);
     transition-duration: 1s;
-    padding: 5em;
   
   }
 

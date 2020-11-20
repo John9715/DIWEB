@@ -18,7 +18,7 @@ $colorFondoHover: #888;
 
 }
 
-@mixin colorInicio ($colorTexto, $colorFondo){
+@mixin color($colorTexto, $colorFondo){
     
     color: $colorTexto;
     background-color: $colorFondo;
@@ -70,7 +70,7 @@ body {@include pagina()}
 
 footer {
     
-    @include colorIncio($colorTexto, $colorFondo);
+    @include color($colorTexto, $colorFondo);
 
     @include colorEfecto($colorTextoHover, $colorFondoHover);
 

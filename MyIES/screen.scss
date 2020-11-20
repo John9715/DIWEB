@@ -1,17 +1,53 @@
+@import "_menu.scss";
+
+
 $colorTexto: #eee;
 $colorTextoHover: #fff;
 $colorFondo: #666;
 $colorFondoHover: #888;
 
-@mixin color ($colorTexto, $colorFondo){
+@mixin color ($colorTexto, $colorTextoHover){
     
-    color: $colorTexto;
-    background-color: $colorFondo;
+    transition: linear(
+
+        $colorTexto,
+        $colorTextoHover
+
+    );
 
 }
 
-@mixin transiciones ($colorTextoHover:hover){
+@mixin bg-color ($colorFondo, $colorFondoHover){
 
-    color: $colorTextoHover;
+    transition: linear(
 
+        $colorFondo,
+        $colorFondoHover
+
+    );
+
+}
+
+@mixin box-sizing($property){
+
+
+}
+
+@mixin transiciones($property,$duration,$timing : linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+
+@mixin animaciones ($name, $duration, $timing : linear){
+
+
+
+}
+
+footer {
+    
+    @include color($color, $colorHover);
+
+    @include bg-color($colorFondo, $colorFondoHover);
 }

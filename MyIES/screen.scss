@@ -17,25 +17,17 @@ $colorFondoHover: #888;
     }
 
 }
-@mixin color ($colorTexto, $colorTextoHover){
+@mixin colorInicio ($colorTexto, $colorFondo){
     
-    transition: linear(
-
-        $colorTexto,
-        $colorTextoHover
-
-    );
+    color: $colorTexto;
+    background-color: $colorFondo;
 
 }
 
-@mixin bg-color ($colorFondo, $colorFondoHover){
+@mixin colorEfecto ($colorTextoHover, $colorFondoHover){
 
-    transition: linear(
-
-        $colorFondo,
-        $colorFondoHover
-
-    );
+    color: $colorTextoHover;
+    background-color: $colorFondoHover;
 
 }
 
@@ -77,9 +69,9 @@ body {@include pagina()}
 
 footer {
     
-    @include color($color, $colorHover);
+    @include colorIncio($colorTexto, $colorFondo);
 
-    @include bg-color($colorFondo, $colorFondoHover);
+    @include colorEfecto($colorTextoHover, $colorFondoHover);
 
     @include size-box(100%);
 

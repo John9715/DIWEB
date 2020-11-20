@@ -1,13 +1,22 @@
-//Imports
-@import "_menu.scss";
-
 //Variables
 $colorTexto: #eee;
 $colorTextoHover: #fff;
 $colorFondo: #666;
 $colorFondoHover: #888;
 
+
+
 //Mixin
+
+@mixin pagina ()
+{
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
 @mixin color ($colorTexto, $colorTextoHover){
     
     transition: linear(
@@ -30,8 +39,10 @@ $colorFondoHover: #888;
 
 }
 
-@mixin box-sizing($property){
+@mixin size-box($size){
 
+    -webkit-box-sizing: $size;
+    -moz-box-sizing: $size;
 
 }
 
@@ -47,10 +58,44 @@ $colorFondoHover: #888;
 
 }
 
+@mixin titulo()
+{
+
+    header{
+        padding: 12px 30px;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #aaa;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+}
+
 //Includes
+body {@include pagina()}
+
+
 footer {
     
     @include color($color, $colorHover);
 
     @include bg-color($colorFondo, $colorFondoHover);
+
+    @include size-box(100%);
+
 }
+
+
+footer {
+    
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+
+}
+
+header { @include titulo}
+
+//Imports
+@import "_menu.scss";

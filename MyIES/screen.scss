@@ -1,0 +1,17 @@
+$colorTexto: #eee;
+$colorTextoHover: #fff;
+$colorFondo: #666;
+$colorFondoHover: #888;
+
+@mixin color ($colorTexto, $colorFondo){
+    
+    color: $colorTexto;
+    background-color: $colorFondo;
+
+}
+
+@mixin transiciones ($colorTextoHover:hover){
+
+    color: $colorTextoHover;
+
+}

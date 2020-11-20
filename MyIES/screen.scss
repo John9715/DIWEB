@@ -1,11 +1,13 @@
+//Imports
 @import "_menu.scss";
 
-
+//Variables
 $colorTexto: #eee;
 $colorTextoHover: #fff;
 $colorFondo: #666;
 $colorFondoHover: #888;
 
+//Mixin
 @mixin color ($colorTexto, $colorTextoHover){
     
     transition: linear(
@@ -45,6 +47,7 @@ $colorFondoHover: #888;
 
 }
 
+//Includes
 footer {
     
     @include color($color, $colorHover);

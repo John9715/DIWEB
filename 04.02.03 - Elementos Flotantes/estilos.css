@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    color: white;
+    background-color: black;
+    display: flex;
+    margin-bottom: 1%;
+}
+
+div.sidebar{
+    color: white;
+    background-color: black;
+    float: left;
+    margin-right: 1%;
+    padding: 1%;
+}
+
+section{
+    display: flex;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+  }
+
+section.articles{
+    display: flex;
+    padding: 2%;
+}
+
+div.course{
+    text-align: center;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+footer{
+    float: bottom;
+    text-align: center;
+    background-color: #d3d3d3;
+    padding: 1%;
+}

@@ -61,13 +61,18 @@ section.images img {
 
 @media (max-device-width: 576px)
 {
+
+  nav {
+    display: flex;
+  }
+
   .icon {
     display: none;
   }
 
   .menu_item {
     padding: 0.1em;
-    /*display: none;*/
+    
     font-size: 0.75em;
   }
 
@@ -121,6 +126,7 @@ section.images img {
 
   nav {
     width: auto;
+    display: flex;
   }
 
   .menu_item {
@@ -142,12 +148,45 @@ section.images img {
   }
 
   
-  main section{
-    width: 50%;
+  main section 
+  {
+      width: 100%;
   }
 
-  section.images img {
-    height: 100px;
-    width: 50%;
+  main 
+  {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  section.main_text 
+  {
+      padding: 0.5em;
+      width: 50%;
+      position: relative;
+      left: 50%;
+  }
+
+  section.images 
+  {
+      position: relative;
+      width: 50%;
+      right: 50%;
+  }
+    
+  section.images img 
+  {
+      height: 100px;
+      width: 32%;
+  }
+
+  section.novedades 
+  {
+      display: inline-flex;
+  }
+
+  section.novedades h2
+  {
+      margin-right: 100px;
   }
 }

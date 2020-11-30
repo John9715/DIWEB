@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Pequeños reseteos */
+h1,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0.5em;
+}
+body {
+  background-color: white;
+}
+
+/* Para cambir el color de leta de ciertos elementos */
+.verde {
+  color: #0c9b3b;
+}
+
+/* Contenedor general*/
+.container {
+  font-family: "Righteous", cursive;
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* Parte del logo y menú */
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Estilos parte principal*/
+main {
+  background-color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+section.main_text {
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em;
+}
+
+section.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.images img {
+  height: 100px;
+  width: 25%;
+}
+
+@media (max-device-width: 576px)
+{
+  .icon {
+    display: none;
+  }
+
+  .menu_item {
+    padding: 0.1em;
+    /*display: none;*/
+    font-size: 0.75em;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}
+
+/* Para el caso de pantalla superior a 576px */
+@media (min-device-width: 577px) and (max-device-width: 992px)
+{
+
+  nav {
+    width: auto;
+  }
+
+  .menu_item {
+    padding: 0.1em;
+    
+    font-size: 0.75em;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .images {
+    float: left;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  
+  main section{
+    width: 50%;
+  }
+
+  section.images img {
+    height: 100px;
+    width: 50%;
+  }
+
+}
+
+/* Para el caso de pantalla superior a 992px */
+@media (max-device-width: 993px)
+{
+
+  nav {
+    width: auto;
+  }
+
+  .menu_item {
+    padding: 0.1em;
+    
+    font-size: 0.75em;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .images {
+    float: left;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  
+  main section{
+    width: 50%;
+  }
+
+  section.images img {
+    height: 100px;
+    width: 50%;
+  }
+}

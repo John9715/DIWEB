@@ -3,23 +3,50 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #3579ff;
+  float: left;
+  width: 100%;
+}
+
+div.menu_item {
+  font-size: large;
+  padding: 1.5%;
+  margin-left: 12%;
 }
 
 div.texto {
   background-color: #3579ff;
-  width: 70%;
+  width: 81%;
   float: left;
   margin-top: 2%;
   padding: 1%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 div.contacto {
   text-align: center;
   background-color: #3579ff;
-  width: 23%;
+  width: 15%;
   float: left;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 2%;
+}
+
+div.lista {
+  padding: 1%;
+}
+
+img {
+  width: 25%;
 }
 /*# sourceMappingURL=estilos.css.map */

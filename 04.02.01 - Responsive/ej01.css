@@ -60,7 +60,7 @@ html, body, ul, ol, li, form, fieldset, legend
         background: #bbb;
     }
 
-@media (min-width: 1001px)
+@media only all and (min-width: 1001px)
 {
 
     #nav
@@ -93,7 +93,7 @@ html, body, ul, ol, li, form, fieldset, legend
 
 }
 
-@media (min-width: 481px) and (max-width: 1000px)
+@media only all and (min-width: 481px) and (max-width: 1000px)
 {
 
     #nav
@@ -128,11 +128,12 @@ html, body, ul, ol, li, form, fieldset, legend
 
 }
 
-@media (max-width: 480px)
+@media only all and (max-width: 480px)
 {
 
     #nav
     {
+        float: left;
         width: 100%;
         background: lime;
     }

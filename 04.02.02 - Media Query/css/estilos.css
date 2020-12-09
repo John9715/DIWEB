@@ -59,7 +59,7 @@ section.images img {
   width: 25%;
 }
 
-@media (max-device-width: 576px)
+@media only all and (max-width: 576px)
 {
 
   nav {
@@ -83,7 +83,7 @@ section.images img {
 }
 
 /* Para el caso de pantalla superior a 576px */
-@media (min-device-width: 577px) and (max-device-width: 992px)
+@media only all and (min-width: 577px) and (max-width: 992px)
 {
 
   nav {
@@ -121,7 +121,7 @@ section.images img {
 }
 
 /* Para el caso de pantalla superior a 992px */
-@media (max-device-width: 993px)
+@media only all and (max-width: 993px)
 {
 
   nav {

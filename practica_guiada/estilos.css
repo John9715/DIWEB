@@ -11,6 +11,10 @@ nav {
   width: 100%;
 }
 
+div.container {
+  height: 75%;
+}
+
 div.menu_item {
   font-size: large;
   padding: 1.5%;
@@ -23,7 +27,7 @@ div.texto {
   float: left;
   margin-top: 2%;
   padding: 1%;
-  height: auto;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

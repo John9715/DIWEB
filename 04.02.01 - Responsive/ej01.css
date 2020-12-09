@@ -60,7 +60,7 @@ html, body, ul, ol, li, form, fieldset, legend
         background: #bbb;
     }
 
-@media (min-device-width: 1001px)
+@media (min-width: 1001px)
 {
 
     #nav
@@ -93,7 +93,7 @@ html, body, ul, ol, li, form, fieldset, legend
 
 }
 
-@media (min-device-width: 481px) and (max-device-width: 1000px)
+@media (min-width: 481px) and (max-width: 1000px)
 {
 
     #nav
@@ -128,7 +128,7 @@ html, body, ul, ol, li, form, fieldset, legend
 
 }
 
-@media (max-device-width: 480px)
+@media (max-width: 480px)
 {
 
     #nav

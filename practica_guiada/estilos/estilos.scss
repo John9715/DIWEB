@@ -11,12 +11,24 @@ nav{
     background-color: #3579ff;
     float: left;
     width: 100%;
+
+}
+
+.menu_item:hover{
+
+    transition-property: font-size;
+    transition-duration: 1s;
+    font-size: 25px;
+    transition-property: color;
+    transition-duration: 1s;
+    color: blue;
     
 }
 
 div.container{
 
     height: 75%;
+
 }
 
 div.menu_item{
@@ -29,25 +41,28 @@ div.menu_item{
 
 div.texto{
 
+    float: left;
     background-color: #3579ff;
     width: 81%;
-    float: left;
+    height: 30em;
     margin-top: 2%;
     padding: 1%;
-    height: 50%;
     display:flex;
     flex-direction: column;
+
 }
 
 div.contacto{
 
+    float: left;
     text-align: center;
     background-color: #3579ff;
     width: 15%;
-    float: left;
+    height: 31.5em;
     //padding-top: 1.5%;
     margin-top: 2%;
     margin-left: 2%;
+
 }
 
 div.lista{
@@ -59,5 +74,11 @@ div.lista{
 img{
 
     width: 25%;
+
+}
+
+iframe{
+
+    width: 75%;
 
 }

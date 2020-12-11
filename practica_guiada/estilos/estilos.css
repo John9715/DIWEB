@@ -11,6 +11,18 @@ nav {
   width: 100%;
 }
 
+.menu_item:hover {
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  font-size: 25px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  transition-duration: 1s;
+  color: blue;
+}
+
 div.container {
   height: 75%;
 }
@@ -22,12 +34,12 @@ div.menu_item {
 }
 
 div.texto {
+  float: left;
   background-color: #3579ff;
   width: 81%;
-  float: left;
+  height: 30em;
   margin-top: 2%;
   padding: 1%;
-  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,10 +50,11 @@ div.texto {
 }
 
 div.contacto {
+  float: left;
   text-align: center;
   background-color: #3579ff;
   width: 15%;
-  float: left;
+  height: 31.5em;
   margin-top: 2%;
   margin-left: 2%;
 }
@@ -52,5 +65,9 @@ div.lista {
 
 img {
   width: 25%;
+}
+
+iframe {
+  width: 75%;
 }
 /*# sourceMappingURL=estilos.css.map */

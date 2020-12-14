@@ -1,0 +1,240 @@
+$colorFondo1: #8a2323;
+$colorFondo2: #af4c4c;
+$colorLetras: #631717; 
+
+a:link, a:visited, a:active {
+    
+    color: $colorLetras;
+    text-decoration:none;
+
+}
+
+body{
+
+    background-color: $colorFondo1;
+
+}
+
+nav{
+
+    background-color: $colorFondo2;
+
+}
+
+div.texto{
+
+    background-color: $colorFondo2;
+    color: $colorLetras;
+
+}
+
+div.contacto{
+
+    background-color: $colorFondo2;
+    color: $colorLetras;
+}
+
+
+@media (min-width: 901px)
+{
+    nav{
+
+        display: flex;
+        float: left;
+        width: 100%;
+
+    }
+
+    .menu_item:hover{
+
+        
+        transition-property: font-size;
+        transition-duration: 1s;
+        font-size: 25px;
+
+    }
+
+    div.menu_item{
+
+        text-decoration: none;
+        font-size: large;
+        padding: 1.5%;
+        margin-left: 12%;
+
+    }
+
+    div.texto{
+
+        float: left;
+        background-color: $colorFondo2;
+        color: $colorLetras;
+        width: 81%;
+        height: 30em;
+        margin-top: 2%;
+        padding: 1%;
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    div.contacto{
+
+        float: left;
+        text-align: center;
+        background-color: $colorFondo2;
+        color: $colorLetras;
+        width: 15%;
+        height: 31.5em;
+        margin-top: 2%;
+        margin-left: 2%;
+
+    }
+
+    div.lista{
+
+        padding: 1%;
+
+    }
+
+    img{
+
+        width: 25%;
+
+    }
+
+    iframe{
+
+        width: 75%;
+
+    }
+
+}
+
+@media only all and (min-width: 481px) and (max-width: 900px)
+{
+    
+    nav{
+    
+        display: flex;
+        float: left;
+        width: 100%;
+    
+    }
+    
+    div.menu_item{
+    
+        font-size: large;
+        padding: 1.5%;
+        margin-left: 12%;
+    
+    }
+    
+    div.texto{
+    
+        float: left;
+        width: 100%;
+        height: 25.5em;
+        margin-top: 2%;
+        display:flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    div.contacto{
+    
+        display: flex;
+        float: left;
+        text-align: center;
+        width: 100%;
+        height: 6em;
+        padding-top: 2%;
+        margin-top: 2%; 
+        margin-bottom: 1%;       
+    
+    }
+
+    .lista{
+
+        margin-left: 1%;
+    }
+    
+    iframe{
+
+        display: none;
+
+    }
+
+    img{
+    
+        width: 40%;
+    
+    }
+
+}
+
+@media only all and (max-width: 480px)
+{
+
+    main{
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 6%;
+        margin-left: 1%;
+        
+    }
+    
+    nav{
+        
+        float: right;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    
+    }
+    
+    div.menu_item{
+    
+        font-size: small;
+    
+    }
+    
+    div.texto{
+    
+        float: left;
+        width: 64%;
+        height: 25.5em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2%;
+    
+    }
+    
+    div.contacto{
+       
+        float: right;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 30%;
+        height: auto;
+        margin-top: 2%;
+    
+    }
+    
+    iframe{
+
+        display: none;
+
+    }
+
+    img{
+    
+        width: 20%;
+    
+    }
+
+}

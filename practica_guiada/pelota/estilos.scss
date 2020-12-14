@@ -1,0 +1,191 @@
+$colorFondo1: #296121;
+$colorFondo2: #318a3d;
+$colorLetras: #005a0b; 
+
+
+a:link, a:visited, a:active {
+    
+    text-decoration:none;
+    color: $colorLetras;
+
+}
+
+
+body{
+
+    background-color: $colorFondo1;
+
+}
+
+main{
+
+    display:flex;
+    align-items: center;
+    padding-left: 6%;
+    margin-left: 1%;
+    
+}
+
+nav{
+
+    display: flex;
+    background-color: $colorFondo2;
+    float: left;
+    width: 100%;
+
+}
+
+.menu_item:hover{
+
+    transition-property: font-size;
+    transition-duration: 1s;
+    font-size: 20px;
+    
+}
+
+div.texto{
+
+    float: left;
+    background-color: $colorFondo2;
+    color: $colorLetras;
+    width: 100%;
+    height: 25.5em;
+    margin-top: 2%;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+div.contacto{
+
+    margin-top: 2%;
+    background-color: $colorFondo2;
+    color: $colorLetras;
+
+}
+
+div.lista{
+
+    margin-left: 2%;
+
+}
+
+img{
+
+    margin: 2%;
+    width: 40%;
+
+}
+
+@media only all and (min-width: 481px)
+{
+    
+    nav{
+    
+        display: flex;
+        background-color: $colorFondo2;
+        float: left;
+        width: 100%;
+    
+    }
+    
+    div.menu_item{
+    
+        font-size: large;
+        padding: 1.5%;
+        margin-left: 12%;
+    
+    }
+    
+    div.texto{
+    
+        float: left;
+        width: 100%;
+        height: 25.5em;
+        margin-top: 2%;
+        display:flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    div.contacto{
+    
+        display: flex;
+        float: left;
+        text-align: center;
+        width: 100%;
+        height: 10em;
+        margin-top: 2%;
+    
+    }
+    
+    img{
+    
+        width: 40%;
+    
+    }
+
+}
+
+
+@media only all and (max-width: 480px)
+{
+
+    main{
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 6%;
+        margin-left: 1%;
+        
+    }
+    
+    nav{
+        
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        width: 30%;
+    
+    }
+    
+    div.menu_item{
+    
+        font-size: small;
+    
+    }
+    
+    div.texto{
+    
+        float: left;
+        width: 64%;
+        height: 25.5em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2%;
+    
+    }
+    
+    div.contacto{
+       
+        float: right;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 30%;
+        height: auto;
+    
+    }
+    
+    img{
+    
+        width: 20%;
+    
+    }
+
+}

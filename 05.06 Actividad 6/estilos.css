@@ -1,0 +1,57 @@
+body {
+    position: relative; 
+}
+
+p {
+    
+    font-size: 30px;
+}
+
+table{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    
+}
+
+tr{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+th{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+td{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    width: 50%;
+    
+}
+
+.otro{
+
+    text-align: center;
+}
+
+#section1 {
+    padding-top:50px;
+    height:500px;
+    color: rgb(0, 0, 0); 
+    background-color: #7cc2ff;
+}
+
+#section21 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #000;
+}
+
+#section22 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #810462;
+}

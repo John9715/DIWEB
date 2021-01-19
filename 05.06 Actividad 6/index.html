@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+____________________________________________________________________________________________________
+  ScrollSpy                                                                                         |
+                                                                                                    |
+  Sintaxis                                                                                          |
+  --------------------------------------------------------------------------------------------------|
+    data-spy="scroll"      -> Indica que vamos a realizar un scroll de pantalla                     |
+                                                                                                    |
+    data-target=".navbar"  -> Indica el objeto/clase sobre el que realizamos el                     |
+                            scroll, en este caso la barra de navegación                             |
+                                                                                                    |
+    data-offset="50"       -> Indica la posición en pixeles de la siguiente posición,               |
+                            es decir lo que ocupa la sección                                        |
+----------------------------------------------------------------------------------------------------|
+  Vía JS                                                                                            |
+  --------------------------------------------------------------------------------------------------|
+    Con JS                ->  $('body').scrollspy({target: ".navbar"})                              |
+                                                                                                    |
+    .scrollspy("refresh")	-> Al añadir o eliminar un objeto con Scrollspy el documento se refresca  |
+                                                                                                    |
+    .scrollspy("dispose")	-> Destruye el scrollspy                                                  |
+                                                                                                    |
+    activate.bs.scrollspy	-> Cuando un objeto nuevo se activa por el scrollspy                      |
+----------------------------------------------------------------------------------------------------|
+  ATENCIÓN                                                                                          |
+----------------------------------------------------------------------------------------------------|
+    -Requiere usar el posicionamiento relativo (position:relative)                                  |
+    -El id y el nombre del href deben coincidir (<div id="section1">  <a href="#section1">)         |
+____________________________________________________________________________________________________|
+--> 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>PMPM</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">PMPM</a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#section1">Sintaxis</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Ejemplos <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section21">Con bootstrap</a></li>
+                    <li><a href="#section22">Sin bootstrap</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>    
+      
+      <div id="section1" class="container-fluid">
+        <h1>Sintaxis</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>data-spy="scroll"</td>
+              <td>Indica que vamos a realizar un scroll de pantalla</td>
+            </tr>
+            <tr>
+              <td>data-target=".navbar"</td>
+              <td>Indica el objeto/clase sobre el que realizamos el 
+                scroll</td>
+            </tr>
+            <tr>
+              <td>data-offset="50" </td>
+              <td>Indica la posición en pixeles de la siguiente posición</td>
+            </tr>
+            <tr>
+              <td class="otro" colspan="2">
+                &lt;body data-spy="scroll" data-target=".navbar" data-offset="50" &gt;
+              </td>
+            </tr>
+          </tbody>
+      </table>
+      
+      </div>
+      <div id="section21" class="container-fluid">
+        <h1>Con bootstrap</h1>
+        <p><a href="ejemplos\ejemplo1.html">Ejemplo 1</a></p>
+        <p><a href="ejemplos\ejemplo2.html">Ejemplo 2</a></p>
+        <p><a href="https://www.thisislevelup.com/">LevelUp</a></p>
+      </div>
+      <div id="section22" class="container-fluid">
+        <h1>Sin bootstrap</h1>
+        <p><a href="https://www.evanshalshaw.com/more/bondcars/">Evan Shalshaw BondCars</a></p>
+        <p><a href="https://switch.paris/">Switch Paris</a></p>
+      </div>
+</body>
+</html>

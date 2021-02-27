@@ -1,0 +1,31 @@
+*
+{
+    height: 4em;
+    margin:0;
+    text-align: center;
+}
+
+.verde
+{
+    background-color:lime;
+}
+
+.gris
+{
+    background-color:lightgray;
+}
+
+.naranja
+{
+    background-color:lightsalmon;
+}
+
+.azulClaro
+{
+    background-color: lightsteelblue;
+}
+
+.azulClaro2
+{
+    background-color: lightseagreen;
+}

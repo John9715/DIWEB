@@ -1,0 +1,33 @@
+*
+{
+    height: 4em;
+    border:2px solid white;
+    padding:0;
+    margin:0;
+}
+
+.verde
+{
+    background-color:green;
+    border: 6px solid white;
+}
+
+.rojo
+{
+    background-color: red;
+}
+
+.morado
+{
+    background-color:purple;
+}
+
+.amarillo
+{
+    background-color:yellow;
+}
+
+.azul
+{
+    background-color: blue;
+}
